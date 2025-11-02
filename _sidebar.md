@@ -1,0 +1,7 @@
+- [首页](/)
+- [小说大纲](/朱砂痣-小说大纲)
+- **第一卷：觉醒**
+  - [第1章：朱砂痣的秘密](/chapters/chapter-01)
+  - [第2章：校园怪谈](/chapters/chapter-02)
+  - [第3章：神秘的男人](/chapters/chapter-03)
+  - [第4章：镇魂针发烫](/chapters/chapter-04)

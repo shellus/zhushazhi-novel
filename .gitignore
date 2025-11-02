@@ -1,0 +1,13 @@
+# 开发环境
+node_modules/
+.vitepress/
+package-lock.json
+package.json
+
+# 临时文件
+*.log
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
