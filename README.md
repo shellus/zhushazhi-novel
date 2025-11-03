@@ -1,20 +1,81 @@
 # 朱砂痣
 
-> 都市奇幻小说 · 20万字创作计划
+> 基于 Docsify 的在线小说阅读网站
 
-## 当前进度
+## 项目简介
 
-- ✅ 第1章：朱砂痣的秘密（2847字）
-- ✅ 第2章：校园怪谈（3124字）
-- ✅ 第3章：神秘的男人（3287字）
-- ✅ 第4章：镇魂针发烫（3186字）
+这是一个都市奇幻小说《朱砂痣》的在线阅读平台,采用 Docsify 构建的纯静态网站,支持章节导航、全文搜索、深色模式等功能。
 
-**总进度：** 12444 / 200000 字（约6.2%）
+## 技术选型
 
----
+- **前端框架**: [Docsify](https://docsify.js.org/) - 轻量级文档网站生成器
+- **主题**: Docsify Themeable - 支持自定义主题和深色模式
+- **插件**:
+  - docsify-search - 全文搜索功能
+  - docsify-pagination - 章节分页导航
+- **部署**: Docker + Nginx
+
+## 项目结构
+
+```
+.
+├── chapters/              # 小说章节目录
+│   ├── chapter-01.md     # 第1章
+│   ├── chapter-02.md     # 第2章
+│   └── ...
+├── index.html            # 主页面配置
+├── _sidebar.md           # 侧边栏导航
+├── README.md             # 项目说明
+├── 朱砂痣-小说大纲.md     # 小说大纲
+├── Dockerfile            # Docker镜像构建文件
+├── docker-compose.yml    # Docker Compose配置
+└── .gitignore            # Git忽略配置
+```
+
+## 快速开始
+
+### 开发模式
+
+使用 Docsify CLI 启动本地开发服务器,支持热重载:
+
+```bash
+# 安装 docsify-cli(仅需安装一次)
+npm i -g docsify-cli
+
+# 启动开发服务器
+docsify serve .
+
+# 默认访问 http://localhost:3000
+```
+
+修改 Markdown 文件后会自动刷新浏览器,无需手动重新加载。
+
+### 生产部署
+
+使用 Docker Compose 一键启动:
+
+```bash
+# 启动服务
+docker-compose up -d
+
+# 停止服务
+docker-compose down
+
+# 查看日志
+docker-compose logs -f
+```
+
+访问 http://localhost:8080
+
+## 创作进度
+
+- ✅ 第1章:朱砂痣的秘密(2847字)
+- ✅ 第2章:校园怪谈(3124字)
+- ✅ 第3章:神秘的男人(3287字)
+- ✅ 第4章:镇魂针发烫(3186字)
+
+**总进度:** 12444 / 200000 字(约6.2%)
 
 ## 开始阅读
 
-点击左侧侧边栏选择章节开始阅读，或者：
-
-[📖 第1章：朱砂痣的秘密](/chapters/chapter-01) | [📋 查看大纲](/朱砂痣-小说大纲)
+[📖 开始阅读](/) | [📋 查看大纲](/朱砂痣-小说大纲)
